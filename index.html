@@ -38,13 +38,20 @@
     </nav>
 
     <main>
-        <div class="jumbotron jumbotron-fluid jumbohome">
+        <div class="jumbohome">
             <div class="container">
+                <h1>MENUJU KEBIASAAN BARU <br>
+                    YANG LEBIH SEHAT <br>
+                    <span>#AYOHIDUPSEHAT</span></h1>
                 <div class="image">
-                    <h1>MENUJU KEBIASAAN BARU <br>
-                        YANG LEBIH SEHAT <br>
-                        <span>#AYOHIDUPSEHAT</span></h1>
-                    <button type="button" class="btn btnMulai">Ayo Mulai !</button>
+                    <img src="img/img1.jpeg" alt="logoawal">
+                    <img src="img/img2.jpeg" alt="logoawal">
+                    <img src="img/img3.jpeg" alt="logoawal">
+                    <img src="img/img4.jpeg" alt="logoawal">
+                    <img src="img/img5.jpeg" alt="logoawal">
+                    <img src="img/img6.jpeg" alt="logoawal">
+                    <img src="img/img7.jpeg" alt="logoawal">
+                    <!-- <button type="button" class="btn btnMulai">Ayo Mulai !</button> -->
                 </div>
             </div>
         </div>
@@ -147,6 +154,12 @@
             prevArrow: $(".slick-prev"),
             nextArrow: $(".slick-next")
         });
+        $('.image').slick({
+            autoplay: true,
+            autoplaySpeed: 1000,
+            // arrows: false
+            arrows: false
+        })
     </script>
 </body>
 
