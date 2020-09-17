@@ -1,0 +1,260 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rubik', sans-serif;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+$basecolor : #56CFE1;
+
+nav {
+    max-width: 100%;
+}
+
+#navbarNavAltMarkup {
+    margin-left: 226px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.jumbohome {
+    background-color: white;
+
+    .image {
+        width: 100%;
+        height: 550px;
+        background-image: url("/img/newnormal.png");
+        background-size: 648px, 432px;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        padding-top: 100px;
+
+        h1 {
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 50px;
+            text-align: left;
+            color: #5C5E5E;
+
+            span {
+                display: inline-block;
+                color: #7096BD;
+            }
+        }
+
+        .btnMulai {
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 22px;
+            text-align: left;
+            color: #fff;
+            background-color: #7096BD;
+        }
+    }
+}
+
+.himbauan {
+    margin-top: -100px;
+    max-width: 100%;
+    height: 751px;
+    background-color: $basecolor;
+    padding-top: 100px;
+
+    .kotak-himbauan {
+        width: 100%;
+        height: 578px;
+        background-color: white;
+        border-radius: 34px;
+        width: 1088px;
+        box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+
+        .image-himbauan {
+            width: 750px !important;
+            height: 500px !important;
+            margin: auto !important;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        .btn-pre,
+        .btn-next {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-top: 255px;
+            filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.16));
+
+            i {
+                display: inline-block;
+                color: #7096BD;
+            }
+        }
+
+        .btn-pre {
+            margin-left: 76px;
+        }
+
+        .btn-next {
+            margin-right: 76px;
+        }
+
+    }
+}
+
+.coronavirus {
+    width: 100%;
+    height: 681px;
+    padding-top: 96px;
+
+    h1 span {
+        color: $basecolor;
+    }
+
+    .image-coronavirus {
+        margin-left: 139px;
+        margin-right: 80px;
+    }
+
+    .kotak {
+        width: 700px;
+        height: 382px;
+        border-top-left-radius: 56px;
+        border-bottom-left-radius: 56px;
+        margin-top: 96px;
+        background: #fff;
+        box-shadow: -9px 9px 6px rgba(0, 0, 0, 0.16);
+
+        p {
+            margin-top: 20px;
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 26px;
+            text-align: left;
+            color: #7f8485;
+
+        }
+    }
+}
+
+.gejala-covid {
+    width: 100%;
+    height: 751px;
+    background: #56cfe1;
+
+    img {
+        margin-bottom: 80px;
+    }
+
+    h1 span {
+        color: #7096BD;
+    }
+
+    p {
+        font-family: Rubik;
+        font-weight: normal;
+        font-size: 32px;
+        text-align: center;
+        color: #7f8485;
+        margin-top: 44px;
+    }
+}
+
+.data-covid {
+    width: 100%;
+    height: 987px;
+
+    .btn-covid {
+        width: 352px;
+        height: 92px;
+        border-radius: 46px;
+        background: #fff;
+        opacity: 0.9;
+        box-shadow: 0px 11px 6px rgba(0, 0, 0, 0.16);
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 32px;
+        text-align: center;
+        color: #7f8485;
+        margin-top: 34px;
+        margin-bottom: 180px;
+
+        span {
+            color: #7096bd;
+        }
+    }
+
+    .data {
+        width: 260px;
+        height: 154px;
+        padding-top: 13px;
+        box-sizing: border-box;
+
+        h1 {
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 28px;
+            text-align: left;
+            color: #7f8485;
+        }
+
+        h3 {
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 48px;
+            text-align: left;
+            color: #7096bd;
+
+        }
+    }
+
+    .positif {
+        border: 1px solid #2559e8;
+    }
+
+    .dirawat {
+        border: 1px solid #c10107;
+    }
+
+    .sembuh {
+        border: 1px solid #00ce22;
+    }
+
+    .meninggal {
+        border: 1px solid #1e1e1e;
+
+    }
+
+    .btn-data {
+        width: 444px;
+        height: 92px;
+        margin-top: 60px;
+
+        span {
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 32px;
+            text-align: left;
+            color: #7f8485;
+
+        }
+    }
+
+    .btn-data:hover span {
+        color: white;
+    }
+}
+
+.protokol-kesehatan {
+    width: 100%;
+    height: 751px;
+    background: #56cfe1;
+
+}
