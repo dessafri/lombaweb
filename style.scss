@@ -50,31 +50,12 @@ nav {
     .image {
         width: 100%;
         height: 500px;
-        background-color: red;
         margin-top: 10px;
 
         img {
             width: 100%;
-            height: 550px;
+            height: 580px;
         }
-
-        // background-image: url("/img/newnormal.png");
-        // background-size: 648px, 432px;
-        // background-repeat: no-repeat;
-        // background-position: right bottom;
-
-
-
-        // .btnMulai {
-        //     border-radius: 50px;
-        //     font-weight: bold;
-        //     font-size: 22px;
-        //     text-align: left;
-        //     color: #fff;
-        //     background-color: #7096BD;
-        //     z-index: 99999;
-        //     position: absolute;
-        // }
     }
 }
 
@@ -277,4 +258,116 @@ nav {
     height: 751px;
     background: #56cfe1;
 
+    h1 {
+        font-family: Rubik;
+        font-weight: 50px;
+        font-size: 42px;
+        text-align: center;
+        color: #7f8485;
+
+    }
+
+    h1 span {
+        font-weight: bold;
+        font-size: 48px;
+    }
+
+    span.protokol {
+        font-family: Rubik;
+        font-weight: bold;
+        font-size: 22px;
+        text-align: center;
+        color: #fff;
+    }
+
+    span.masker {
+        font-family: Rubik;
+        font-weight: bold;
+        font-size: 32px;
+        text-align: center;
+        color: #fff;
+
+    }
+}
+
+.poster {
+    width: 100%;
+    height: 1900px;
+    margin-top: 123px;
+
+    p {
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 60px;
+        text-align: left;
+        color: #7F8485;
+    }
+
+    p span {
+        font-weight: normal;
+        color: #7096bd;
+
+    }
+
+    p.keluarga {
+        font-size: 59px;
+        font-weight: normal;
+    }
+
+    h1 {
+        font-family: Poppins;
+        font-weight: normal;
+        font-size: 60px;
+        color: #7f8485;
+    }
+
+    h1 span {
+        color: #7096bd;
+        font-weight: bold;
+    }
+}
+
+footer {
+    .footer {
+        width: 1366px;
+        height: 266px;
+        background: #56cfe1;
+
+        h3 {
+            margin-top: auto;
+            margin-bottom: auto;
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 38px;
+            text-align: left;
+            color: #fff;
+
+        }
+
+        ul {
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 24px;
+            text-align: left;
+
+            list-style: none;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        ul a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        span {
+            display: inline-block;
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 22px;
+            text-align: left;
+            color: #fff;
+
+        }
+    }
 }
