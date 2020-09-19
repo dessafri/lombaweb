@@ -259,7 +259,7 @@
                     <div class="row">
                         <div class="col col-12 text-center">
                             <button class="btn btn-outline-primary">
-                                <a href="">Akses Lokasi</a>
+                                <a href="" id="akses-lokasi">Akses Lokasi</a>
                             </button>
                         </div>
                     </div>
@@ -288,7 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row himbau">
                         <div class="col col-8 offset-2">
                             <p>Tetap waspada jaga kesehatan, jaga kebersihan, dan jaga jarak.
                                 Jauhi kerumunan jika tidak ada keperluan mendesak
@@ -353,7 +353,21 @@
     </script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg="nest"></script>
-    <script src="script/api.js"></script>
+    <script src="../script/navigator.js"></script>
+    <script>
+        let btnLokasi = document.getElementById('akses-lokasi');
+        btnLokasi.addEventListener("click", function (e) {
+            requestPermission();
+            var startPos;
+            var geoSuccess = function (position) {
+                startPos = position;
+                console.log(startPos.coords.latitude);
+                console.log(startPos.coords.longitude);
+            };
+            navigator.geolocation.getCurrentPosition(geoSuccess);
+            e.preventDefault()
+        })
+    </script>
 </body>
 
 </html>
