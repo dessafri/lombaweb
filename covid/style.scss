@@ -1,0 +1,444 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rubik', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+$basecolor : #56CFE1;
+
+nav {
+    max-width: 100%;
+    height: 80px;
+}
+
+#navbarNavAltMarkup {
+    margin-left: 226px;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.jumbohome {
+    width: 100%;
+    height: 695px;
+
+    .image {
+        padding-top: 155px;
+    }
+
+    .title {
+        h1 {
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 70px;
+            text-align: left;
+            margin: auto;
+        }
+    }
+
+    span {
+        color: #56CFE1;
+    }
+}
+
+.himbauan {
+    max-width: 100%;
+    height: 601px;
+    background-color: $basecolor;
+    padding-top: 65px;
+
+    h1 {
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 70px;
+        text-align: left;
+        color: #7f8485;
+        margin-bottom: 83px;
+    }
+
+    p {
+        width: 1088px;
+        font-family: Rubik;
+        font-weight: normal;
+        font-size: 26px;
+        text-align: center;
+        color: #707070;
+
+    }
+
+    .btn-gejala {
+        width: 293px;
+        height: 78px;
+        border-radius: 49px;
+        background-color: white;
+        margin-top: 50px;
+
+        a {
+            text-decoration: none;
+            font-family: Rubik;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            color: #707070;
+
+        }
+    }
+}
+
+.gejala-covid {
+    width: 100%;
+    height: 1070px;
+
+    img {
+        margin-bottom: 80px;
+    }
+
+    h1 {
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 48px;
+        text-align: left;
+
+    }
+
+    h1 span {
+        color: #7096BD;
+    }
+
+    p {
+        font-family: Rubik;
+        font-weight: normal;
+        font-size: 32px;
+        text-align: center;
+        color: #7f8485;
+        margin-top: 44px;
+    }
+
+    .btn-pencegahan {
+        width: 463px;
+        height: 72px;
+        border-radius: 46px;
+        background: #fff;
+        opacity: 0.9;
+        box-shadow: 0px 11px 6px rgba(0, 0, 0, 0.16);
+        margin-top: 42px;
+
+        a {
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 22px;
+            text-align: left;
+            color: #7f8485;
+            text-decoration: none;
+        }
+    }
+}
+
+.penanganan-gejala {
+    height: 824px;
+    background: #56cfe1;
+    padding-top: 60px;
+
+    h1 {
+        font-family: Rubik;
+        font-weight: normal;
+        font-size: 36px;
+        text-align: center;
+        color: #7f8485;
+
+    }
+
+    h1 span {
+        color: #7096BD;
+
+    }
+
+    p {
+        font-family: Rubik;
+        font-weight: normal;
+        font-size: 22px;
+        text-align: left;
+        color: #7f8485;
+        margin-top: 78px;
+    }
+
+    i {
+        margin-right: 5px;
+    }
+
+    .btn-penularan {
+        width: 463px;
+        height: 72px;
+        border-radius: 46px;
+        background: #fff;
+        opacity: 0.9;
+        box-shadow: 0px 11px 6px rgba(0, 0, 0, 0.16);
+        margin-top: 42px;
+
+        a {
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 22px;
+            text-align: left;
+            color: #7f8485;
+            text-decoration: none;
+        }
+    }
+}
+
+.penularan {
+    padding-top: 40px;
+    box-sizing: border-box;
+    height: 675px;
+
+    h1 {
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 32px;
+        text-align: center;
+        color: #7f8485;
+        margin-bottom: 50px;
+    }
+
+    span {
+        margin-top: auto;
+        margin-bottom: auto;
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        color: #7f8485;
+
+    }
+
+    .btn-protokol {
+        width: 463px;
+        height: 72px;
+        border-radius: 46px;
+        background: #fff;
+        opacity: 0.9;
+        box-shadow: 0px 11px 6px rgba(0, 0, 0, 0.16);
+        margin-top: 42px;
+
+        a {
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 22px;
+            text-align: left;
+            color: #7f8485;
+            text-decoration: none;
+        }
+    }
+}
+
+.protokol-kesehatan {
+    width: 100%;
+    height: 751px;
+    background: #56cfe1;
+
+    h1 {
+        font-family: Rubik;
+        font-weight: 50px;
+        font-size: 42px;
+        text-align: center;
+        color: #7f8485;
+
+    }
+
+    h1 span {
+        font-weight: bold;
+        font-size: 48px;
+    }
+
+    span.protokol {
+        font-family: Rubik;
+        font-weight: bold;
+        font-size: 22px;
+        text-align: center;
+        color: #fff;
+    }
+
+    span.masker {
+        font-family: Rubik;
+        font-weight: bold;
+        font-size: 32px;
+        text-align: center;
+        color: #fff;
+
+    }
+}
+
+.cek-covid {
+    height: 700px;
+
+
+
+    .kotak {
+        width: 100%;
+        height: 650px;
+        margin-top: 60px;
+        border-radius: 56px;
+        box-shadow: -1px -1px 17px 0px rgba(0, 0, 0, 0.48);
+        padding-top: 28px;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 42px;
+        text-align: center;
+        color: #7f8485;
+
+    }
+
+    h1 span {
+        color: #56CFE1;
+    }
+
+    h5 {
+        font-family: Rubik;
+        font-weight: 300;
+        font-size: 22px;
+        text-align: center;
+        color: #7096bd;
+
+    }
+
+    button {
+        border-radius: 33px;
+        background: #fff;
+        opacity: 0.9;
+        box-shadow: 0px 11px 6px rgba(0, 0, 0, 0.16);
+        margin-top: 10px;
+
+        a {
+            text-decoration: none;
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 20px;
+            text-align: left;
+            color: #7f8485;
+
+        }
+    }
+
+    button:hover {
+        background-color: white;
+    }
+
+    .info-kota {
+        margin-top: 30px;
+
+        h3 {
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 28px;
+            text-align: left;
+            color: #7f8485;
+
+        }
+
+        h5 {
+            font-family: Rubik;
+            font-weight: normal;
+            font-size: 26px;
+            text-align: left;
+            color: #7f8485;
+
+        }
+
+        .info {
+            margin-left: 20px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+    }
+
+    p {
+        font-family: Rubik;
+        font-weight: normal;
+        font-size: 26px;
+        text-align: center;
+        color: #7f8485;
+
+    }
+
+    b {
+        color: #56CFE1;
+    }
+}
+
+.poster {
+    width: 100%;
+    margin-bottom: 50px;
+
+    p {
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 50px;
+        text-align: left;
+        color: #7F8485;
+    }
+
+    p span {
+        font-weight: normal;
+        color: #7096bd;
+
+    }
+}
+
+footer {
+    .footer {
+        width: 100%;
+        height: 246px;
+        background: #56cfe1;
+
+        img {
+            margin-top: 10px;
+            margin-left: -20px;
+        }
+
+        h3 {
+            margin-top: auto;
+            margin-bottom: auto;
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 32px;
+            text-align: left;
+            color: #fff;
+            margin-top: -30px;
+        }
+
+        ul {
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 24px;
+            text-align: left;
+
+            list-style: none;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        ul a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        span {
+            display: inline-block;
+            font-family: "Open Sans";
+            font-weight: normal;
+            font-size: 22px;
+            text-align: left;
+            color: #fff;
+
+        }
+    }
+}
