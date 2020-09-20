@@ -17,8 +17,10 @@ const getApi = () => {
 }
 getApi()
 
+let dataCovidKota = []
+
 function dataCovidPerkota(data) {
-    console.log(data)
+    dataCovidKota = data
 }
 
 function dataCovidProvinsi(data) {

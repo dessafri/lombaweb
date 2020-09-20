@@ -264,31 +264,8 @@
                         </div>
                     </div>
                     <div class="info-kota">
-                        <h3 class="text-center">KABUPATEN LAMONGAN</h3>
-                        <div class="info">
-                            <div class="row">
-                                <div class="col col-10 offset-1">
-                                    <h5 class="text-left">Total Konfirmasi : <span>450</span></h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-10 offset-1">
-                                    <h5 class="text-left">Dirawat : <span>450</span></h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-10 offset-1">
-                                    <h5 class="text-left">Sembuh : <span>150</span></h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-10 offset-1">
-                                    <h5 class="text-left">Meninggal : <span>50</span></h5>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="row himbau">
+                    <div class="row himbau" style="display: none;">
                         <div class="col col-8 offset-2">
                             <p>Tetap waspada jaga kesehatan, jaga kebersihan, dan jaga jarak.
                                 Jauhi kerumunan jika tidak ada keperluan mendesak
@@ -354,20 +331,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg="nest"></script>
     <script src="../script/navigator.js"></script>
-    <script>
-        let btnLokasi = document.getElementById('akses-lokasi');
-        btnLokasi.addEventListener("click", function (e) {
-            requestPermission();
-            var startPos;
-            var geoSuccess = function (position) {
-                startPos = position;
-                console.log(startPos.coords.latitude);
-                console.log(startPos.coords.longitude);
-            };
-            navigator.geolocation.getCurrentPosition(geoSuccess);
-            e.preventDefault()
-        })
-    </script>
+    <script src="../script/api.js"></script>
 </body>
 
 </html>
