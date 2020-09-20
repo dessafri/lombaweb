@@ -57,7 +57,22 @@ function convertLatLong(lat, long) {
                 `
             })
 
-            document.querySelector('.info-kota').innerHTML = result;
-            document.querySelector('.himbau').style.display = "block";
+            let spinner = `
+            <div class="text-center" id="spinner">
+                    <div class="spinner-border text-info" role="status"
+                                style="width: 50px; height: 50px; margin-bottom: 20px;">
+                                <span class="sr-only">Loading...</span>
+                     </div>
+            </div>
+            `
+
+            document.querySelector('.info-kota').innerHTML = spinner
+
+            setTimeout(() => {
+                document.querySelector('#spinner').style.display = "none";
+                document.querySelector('.info-kota').innerHTML = result;
+                document.querySelector('.himbau').style.display = "block";
+            }, 5000);
+
         })
 }
