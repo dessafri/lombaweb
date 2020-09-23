@@ -13,6 +13,7 @@ body {
 nav {
   max-width: 100%;
   height: 80px;
+  z-index: 999999999;
 }
 
 #navbarNavAltMarkup {
@@ -27,6 +28,8 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 999999999;
+  margin-top: 100px;
 }
 
 .jumbohome h1 {
@@ -35,7 +38,7 @@ nav {
   font-size: 50px;
   text-align: left;
   color: white;
-  z-index: 999999;
+  z-index: 999;
   position: absolute;
   margin-top: 150px;
   margin-left: 20px;
@@ -44,7 +47,7 @@ nav {
 .jumbohome h1 span {
   display: inline-block;
   color: #7096BD;
-  z-index: 99999;
+  z-index: 999;
 }
 
 .jumbohome .image {
@@ -77,8 +80,8 @@ nav {
 }
 
 .himbauan .kotak-himbauan .image-himbauan {
-  width: 750px !important;
-  height: 500px !important;
+  max-width: 750px !important;
+  max-height: 500px !important;
   margin: auto !important;
 }
 
@@ -113,7 +116,6 @@ nav {
 
 .coronavirus {
   width: 100%;
-  height: 681px;
   padding-top: 96px;
 }
 
@@ -124,49 +126,136 @@ nav {
 .coronavirus .image-coronavirus {
   margin-left: 139px;
   margin-right: 80px;
+  overflow: hidden;
+}
+
+.coronavirus .image-coronavirus img {
+  margin-left: -300px;
+  width: 0px;
+  height: 0px;
 }
 
 .coronavirus .kotak {
-  width: 700px;
-  height: 382px;
+  width: 100%;
   border-top-left-radius: 56px;
   border-bottom-left-radius: 56px;
   margin-top: 96px;
   background: #fff;
   -webkit-box-shadow: -9px 9px 6px rgba(0, 0, 0, 0.16);
           box-shadow: -9px 9px 6px rgba(0, 0, 0, 0.16);
+  padding-top: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .coronavirus .kotak p {
-  margin-top: 20px;
   font-family: Rubik;
   font-weight: 500;
+  font-size: 22px;
+  text-align: left;
+  color: #7f8485;
+  margin-left: 200px;
+  display: none;
+}
+
+.cek-covid {
+  background-color: #56CFE1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 50px;
+}
+
+.cek-covid .kotak {
+  width: 100%;
+  margin-top: 60px;
+  border-radius: 56px;
+  -webkit-box-shadow: -1px -1px 17px 0px rgba(0, 0, 0, 0.48);
+          box-shadow: -1px -1px 17px 0px rgba(0, 0, 0, 0.48);
+  padding-top: 28px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+}
+
+.cek-covid h1 {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 42px;
+  text-align: center;
+  color: #7f8485;
+}
+
+.cek-covid h1 span {
+  color: #56CFE1;
+}
+
+.cek-covid h5 {
+  font-family: Rubik;
+  font-weight: 300;
+  font-size: 22px;
+  text-align: center;
+  color: #7096bd;
+}
+
+.cek-covid button {
+  border-radius: 33px;
+  background: #fff;
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 11px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 11px 6px rgba(0, 0, 0, 0.16);
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.cek-covid button a {
+  text-decoration: none;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+  color: #7f8485;
+}
+
+.cek-covid button:hover {
+  background-color: white;
+}
+
+.cek-covid .info-kota {
+  margin-top: 10px;
+}
+
+.cek-covid .info-kota h3 {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 28px;
+  text-align: left;
+  color: #7f8485;
+}
+
+.cek-covid .info-kota h5 {
+  font-family: Rubik;
+  font-weight: normal;
   font-size: 26px;
   text-align: left;
   color: #7f8485;
 }
 
-.gejala-covid {
-  width: 100%;
-  height: 751px;
-  background: #56cfe1;
+.cek-covid .info-kota .info {
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
-.gejala-covid img {
-  margin-bottom: 80px;
-}
-
-.gejala-covid h1 span {
-  color: #7096BD;
-}
-
-.gejala-covid p {
+.cek-covid .himbau p {
   font-family: Rubik;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 26px;
   text-align: center;
   color: #7f8485;
-  margin-top: 44px;
+}
+
+.cek-covid .himbau b {
+  color: #56CFE1;
 }
 
 .data-covid {
@@ -259,6 +348,20 @@ nav {
   background: #56cfe1;
 }
 
+.protokol-kesehatan .imgHimbauanProtokol {
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+
+.protokol-kesehatan .img-muncul {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
 .protokol-kesehatan h1 {
   font-family: Rubik;
   font-weight: 50px;
@@ -272,12 +375,23 @@ nav {
   font-size: 48px;
 }
 
-.protokol-kesehatan span.protokol {
+.protokol-kesehatan .protokolspan {
   font-family: Rubik;
   font-weight: bold;
   font-size: 22px;
   text-align: center;
   color: #fff;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.protokol-kesehatan .spanmuncul {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  opacity: 1;
 }
 
 .protokol-kesehatan span.masker {
@@ -368,5 +482,161 @@ footer .footer span {
   font-size: 22px;
   text-align: left;
   color: #fff;
+}
+
+@-webkit-keyframes kiriKanan {
+  0% {
+    margin-left: -300;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    margin-left: 0;
+    width: 444px;
+    height: 444px;
+  }
+}
+
+@keyframes kiriKanan {
+  0% {
+    margin-left: -300;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    margin-left: 0;
+    width: 444px;
+    height: 444px;
+  }
+}
+
+@-webkit-keyframes kanankiri {
+  0% {
+    margin-left: 200px;
+    display: none;
+  }
+  100% {
+    margin-left: 0;
+    display: block;
+  }
+}
+
+@keyframes kanankiri {
+  0% {
+    margin-left: 200px;
+    display: none;
+  }
+  100% {
+    margin-left: 0;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    z-index: 999999;
+  }
+  nav #navbarNavAltMarkup {
+    background-color: #56CFE1;
+    width: 1000px;
+    margin-left: 0;
+    width: 100%;
+  }
+  nav #navbarNavAltMarkup .navbar-nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .jumbohome {
+    width: 100%;
+    height: 695px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .jumbohome h1 {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: left;
+    color: white;
+    z-index: 999;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 20px;
+  }
+  .jumbohome h1 span {
+    display: inline-block;
+    color: #7096BD;
+    z-index: 999;
+  }
+  .jumbohome .image {
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+  }
+  .jumbohome .image img {
+    width: 100%;
+    height: 580px;
+  }
+  .himbauan {
+    margin-top: -100px;
+    max-width: 100%;
+    height: 551px;
+    background-color: #56CFE1;
+    padding-top: 100px;
+  }
+  .himbauan .kotak-himbauan {
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    border-radius: 34px;
+    -webkit-box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+    margin-left: 10px;
+  }
+  .himbauan .kotak-himbauan .image-himbauan {
+    max-width: 350px !important;
+    max-height: 300px !important;
+    margin: auto !important;
+  }
+  .himbauan .kotak-himbauan .image-himbauan img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .himbauan .kotak-himbauan .btn-pre,
+  .himbauan .kotak-himbauan .btn-next {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 155px;
+    -webkit-filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.16));
+            filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.16));
+  }
+  .himbauan .kotak-himbauan .btn-pre i,
+  .himbauan .kotak-himbauan .btn-next i {
+    display: inline-block;
+    color: #7096BD;
+    font-size: 6px;
+  }
+  .himbauan .kotak-himbauan .btn-pre {
+    margin-left: 16px;
+  }
+  .himbauan .kotak-himbauan .btn-next {
+    margin-right: 16px;
+  }
+  .coronavirus {
+    padding-top: 39px;
+  }
+  .coronavirus img {
+    width: 222px;
+    height: 222px;
+  }
+  .coronavirus .kotak {
+    height: auto;
+    margin-top: -10px;
+  }
+  .coronavirus .kotak p {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

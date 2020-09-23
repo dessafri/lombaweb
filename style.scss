@@ -15,6 +15,7 @@ $basecolor : #56CFE1;
 nav {
     max-width: 100%;
     height: 80px;
+    z-index: 999999999;
 }
 
 #navbarNavAltMarkup {
@@ -28,6 +29,8 @@ nav {
     width: 100%;
     height: 695px;
     display: flex;
+    z-index: 999999999;
+    margin-top: 100px;
 
     h1 {
         font-family: Rubik;
@@ -35,7 +38,7 @@ nav {
         font-size: 50px;
         text-align: left;
         color: white;
-        z-index: 999999;
+        z-index: 999;
         position: absolute;
         margin-top: 150px;
         margin-left: 20px;
@@ -43,7 +46,7 @@ nav {
         span {
             display: inline-block;
             color: #7096BD;
-            z-index: 99999;
+            z-index: 999;
 
         }
     }
@@ -76,8 +79,8 @@ nav {
         box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
 
         .image-himbauan {
-            width: 750px !important;
-            height: 500px !important;
+            max-width: 750px !important;
+            max-height: 500px !important;
             margin: auto !important;
 
             img {
@@ -113,7 +116,6 @@ nav {
 
 .coronavirus {
     width: 100%;
-    height: 681px;
     padding-top: 96px;
 
     h1 span {
@@ -123,50 +125,144 @@ nav {
     .image-coronavirus {
         margin-left: 139px;
         margin-right: 80px;
+        overflow: hidden;
+
+        img {
+            margin-left: -300px;
+            width: 0px;
+            height: 0px;
+        }
     }
 
     .kotak {
-        width: 700px;
-        height: 382px;
+        width: 100%;
         border-top-left-radius: 56px;
         border-bottom-left-radius: 56px;
         margin-top: 96px;
         background: #fff;
         box-shadow: -9px 9px 6px rgba(0, 0, 0, 0.16);
+        padding-top: 30px;
+        box-sizing: border-box;
 
         p {
-            margin-top: 20px;
             font-family: Rubik;
             font-weight: 500;
-            font-size: 26px;
+            font-size: 22px;
+            text-align: left;
+            color: #7f8485;
+            margin-left: 200px;
+            display: none;
+        }
+    }
+}
+
+.cek-covid {
+    background-color: #56CFE1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+
+    .kotak {
+        width: 100%;
+        margin-top: 60px;
+        border-radius: 56px;
+        box-shadow: -1px -1px 17px 0px rgba(0, 0, 0, 0.48);
+        padding-top: 28px;
+        box-sizing: border-box;
+        background-color: white;
+    }
+
+    h1 {
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 42px;
+        text-align: center;
+        color: #7f8485;
+
+    }
+
+    h1 span {
+        color: #56CFE1;
+    }
+
+    h5 {
+        font-family: Rubik;
+        font-weight: 300;
+        font-size: 22px;
+        text-align: center;
+        color: #7096bd;
+
+    }
+
+    button {
+        border-radius: 33px;
+        background: #fff;
+        opacity: 0.9;
+        box-shadow: 0px 11px 6px rgba(0, 0, 0, 0.16);
+        margin-top: 10px;
+        margin-bottom: 50px;
+
+        a {
+            text-decoration: none;
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 20px;
             text-align: left;
             color: #7f8485;
 
         }
     }
-}
 
-.gejala-covid {
-    width: 100%;
-    height: 751px;
-    background: #56cfe1;
-
-    img {
-        margin-bottom: 80px;
+    button:hover {
+        background-color: white;
     }
 
-    h1 span {
-        color: #7096BD;
+    .info-kota {
+        margin-top: 10px;
+        // display: none;
+
+        h3 {
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 28px;
+            text-align: left;
+            color: #7f8485;
+
+        }
+
+        h5 {
+            font-family: Rubik;
+            font-weight: normal;
+            font-size: 26px;
+            text-align: left;
+            color: #7f8485;
+
+        }
+
+        .info {
+            margin-left: 20px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
     }
 
-    p {
-        font-family: Rubik;
-        font-weight: normal;
-        font-size: 32px;
-        text-align: center;
-        color: #7f8485;
-        margin-top: 44px;
+    .himbau {
+        // display: none;
+
+        p {
+            font-family: Rubik;
+            font-weight: normal;
+            font-size: 26px;
+            text-align: center;
+            color: #7f8485;
+
+        }
+
+        b {
+            color: #56CFE1;
+        }
     }
+
 }
 
 .data-covid {
@@ -259,6 +355,17 @@ nav {
     height: 751px;
     background: #56cfe1;
 
+    .imgHimbauanProtokol {
+        transform: translateX(-100px);
+        transition: 1s;
+        opacity: 0;
+    }
+
+    .img-muncul {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
     h1 {
         font-family: Rubik;
         font-weight: 50px;
@@ -273,12 +380,20 @@ nav {
         font-size: 48px;
     }
 
-    span.protokol {
+    .protokolspan {
         font-family: Rubik;
         font-weight: bold;
         font-size: 22px;
         text-align: center;
         color: #fff;
+        transform: translateX(100px);
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .spanmuncul {
+        transform: translateX(0px);
+        opacity: 1;
     }
 
     span.masker {
@@ -374,6 +489,159 @@ footer {
             text-align: left;
             color: #fff;
 
+        }
+    }
+}
+
+@keyframes kiriKanan {
+    0% {
+        margin-left: -300;
+        width: 0;
+        height: 0;
+    }
+
+    100% {
+        margin-left: 0;
+        width: 444px;
+        height: 444px;
+    }
+}
+
+@keyframes kanankiri {
+    0% {
+        margin-left: 200px;
+        display: none;
+    }
+
+    100% {
+        margin-left: 0;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        z-index: 999999;
+
+        #navbarNavAltMarkup {
+            background-color: #56CFE1;
+            width: 1000px;
+            margin-left: 0;
+            width: 100%;
+
+            .navbar-nav {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+
+    .jumbohome {
+        // background-color: yellow;
+        width: 100%;
+        height: 695px;
+        display: flex;
+
+        h1 {
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 40px;
+            text-align: left;
+            color: white;
+            z-index: 999;
+            position: absolute;
+            margin-top: 150px;
+            margin-left: 20px;
+
+            span {
+                display: inline-block;
+                color: #7096BD;
+                z-index: 999;
+
+            }
+        }
+
+        .image {
+            width: 100%;
+            height: 500px;
+            margin-top: 10px;
+
+            img {
+                width: 100%;
+                height: 580px;
+            }
+        }
+    }
+
+    .himbauan {
+        margin-top: -100px;
+        max-width: 100%;
+        height: 551px;
+        background-color: $basecolor;
+        padding-top: 100px;
+
+        .kotak-himbauan {
+            width: 100%;
+            height: 350px;
+            background-color: white;
+            border-radius: 34px;
+            box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+            margin-left: 10px;
+
+            .image-himbauan {
+                max-width: 350px !important;
+                max-height: 300px !important;
+                margin: auto !important;
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            .btn-pre,
+            .btn-next {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                margin-top: 155px;
+                filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.16));
+
+                i {
+                    display: inline-block;
+                    color: #7096BD;
+                    font-size: 6px;
+                }
+            }
+
+            .btn-pre {
+                margin-left: 16px;
+            }
+
+            .btn-next {
+                margin-right: 16px;
+            }
+
+        }
+    }
+
+    .coronavirus {
+        padding-top: 39px;
+
+        img {
+            width: 222px;
+            height: 222px;
+        }
+
+        .kotak {
+            height: auto;
+            margin-top: -10px;
+
+            p {
+                font-size: 16px;
+            }
         }
     }
 }
