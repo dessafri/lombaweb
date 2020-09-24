@@ -19,7 +19,7 @@ nav {
 
 #navbarNavAltMarkup {
     margin-left: 226px;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: normal;
 }
 
@@ -30,6 +30,17 @@ nav {
 
     .image {
         padding-top: 155px;
+    }
+
+    .imgVirus {
+        transform: translateX(-200px);
+        transition: 1s;
+        opacity: 0;
+    }
+
+    .imgVirusMuncul {
+        transform: translateX(0);
+        opacity: 1;
     }
 
     .title {
@@ -104,6 +115,12 @@ nav {
         margin-bottom: 80px;
     }
 
+    .img-gejala {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: .9s;
+    }
+
     h1 {
         font-family: Rubik;
         font-weight: 500;
@@ -159,6 +176,12 @@ nav {
 
     }
 
+    .img-penanganan {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: .9s;
+    }
+
     h1 span {
         color: #7096BD;
 
@@ -175,6 +198,12 @@ nav {
 
     i {
         margin-right: 5px;
+    }
+
+    .fa-check {
+        transform: translateX(-50px);
+        opacity: 0;
+        transition: .9;
     }
 
     .btn-penularan {
@@ -211,6 +240,17 @@ nav {
         margin-bottom: 50px;
     }
 
+    .img-penularan {
+        margin-left: -100px;
+        opacity: 0;
+        transition: .9s;
+    }
+
+    .img-penularanMuncul {
+        margin-left: 0;
+        opacity: 1;
+    }
+
     span {
         margin-top: auto;
         margin-bottom: auto;
@@ -219,7 +259,19 @@ nav {
         font-size: 18px;
         text-align: center;
         color: #7f8485;
+        display: inline-block;
 
+    }
+
+    .span-penularan {
+        transform: translateX(100px);
+        opacity: 0;
+        transition: .9s;
+    }
+
+    .span-penularanMuncul {
+        transform: translateX(0);
+        opacity: 1;
     }
 
     .btn-protokol {
@@ -256,17 +308,36 @@ nav {
 
     }
 
+    .imgHimbauanProtokol {
+        transform: translateX(-100px);
+        transition: 1s;
+        opacity: 0;
+    }
+
+    .img-muncul {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
     h1 span {
         font-weight: bold;
         font-size: 48px;
     }
 
-    span.protokol {
+    .protokolspan {
         font-family: Rubik;
         font-weight: bold;
         font-size: 22px;
         text-align: center;
         color: #fff;
+        transform: translateX(100px);
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .spanmuncul {
+        transform: translateX(0px);
+        opacity: 1;
     }
 
     span.masker {
@@ -325,7 +396,7 @@ footer {
         ul {
             font-family: Rubik;
             font-weight: 500;
-            font-size: 24px;
+            font-size: 18px;
             text-align: left;
 
             list-style: none;
@@ -342,37 +413,10 @@ footer {
             display: inline-block;
             font-family: "Open Sans";
             font-weight: normal;
-            font-size: 22px;
+            font-size: 18px;
             text-align: left;
             color: #fff;
 
-        }
-    }
-}
-
-@media (min-width: 576px) {
-    .jumbohome {
-        width: 100%;
-        height: 695px;
-        display: none;
-
-        .image {
-            padding-top: 155px;
-            margin-left: 40px !important;
-        }
-
-        .title {
-            h1 {
-                font-family: Rubik;
-                font-weight: 500;
-                font-size: 20px;
-                text-align: left;
-                margin: auto;
-            }
-        }
-
-        span {
-            color: #56CFE1;
         }
     }
 }

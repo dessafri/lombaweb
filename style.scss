@@ -16,12 +16,21 @@ nav {
     max-width: 100%;
     height: 80px;
     z-index: 999999999;
+
+    .dropdown-menu {
+        color: #7f8485;
+
+        span {
+            display: inline-block;
+        }
+    }
 }
 
 #navbarNavAltMarkup {
     margin-left: 226px;
-    font-size: 22px;
+    font-size: 17px;
     font-weight: normal;
+
 }
 
 .jumbohome {
@@ -128,9 +137,15 @@ nav {
         overflow: hidden;
 
         img {
-            margin-left: -300px;
-            width: 0px;
-            height: 0px;
+            transform: translateX(-300px);
+            transition: .5s;
+            opacity: 0;
+        }
+
+        .img-coronaMuncul {
+            transform: translateX(0);
+            opacity: 1;
+
         }
     }
 
@@ -150,8 +165,14 @@ nav {
             font-size: 22px;
             text-align: left;
             color: #7f8485;
-            margin-left: 200px;
-            display: none;
+            transform: translateX(100px);
+            opacity: 0;
+            transition: .5s;
+        }
+
+        .p-muncul {
+            transform: translateX(0);
+            opacity: 1;
         }
     }
 }
@@ -468,7 +489,7 @@ footer {
         ul {
             font-family: Rubik;
             font-weight: 500;
-            font-size: 24px;
+            font-size: 18px;
             text-align: left;
 
             list-style: none;
@@ -485,37 +506,11 @@ footer {
             display: inline-block;
             font-family: "Open Sans";
             font-weight: normal;
-            font-size: 22px;
+            font-size: 18px;
             text-align: left;
             color: #fff;
 
         }
-    }
-}
-
-@keyframes kiriKanan {
-    0% {
-        margin-left: -300;
-        width: 0;
-        height: 0;
-    }
-
-    100% {
-        margin-left: 0;
-        width: 444px;
-        height: 444px;
-    }
-}
-
-@keyframes kanankiri {
-    0% {
-        margin-left: 200px;
-        display: none;
-    }
-
-    100% {
-        margin-left: 0;
-        display: block;
     }
 }
 

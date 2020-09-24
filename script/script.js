@@ -43,24 +43,11 @@ $(document).ready(function () {
     $(window).scroll(function (event) {
         var scroll = $(this).scrollTop();
         if (scroll >= 1390 && scroll < 1900) {
-            $('.img-corona').css({
-                "animation": "kiriKanan 4s"
-            })
             setTimeout(() => {
-                $(".img-corona").css({
-                    "margin-left": "0",
-                    "width": "444px",
-                    "height": "444px"
-                })
-            }, 3700);
+                $(".img-corona").addClass('img-coronaMuncul')
+                $("#penjelasan-covid").addClass('p-muncul')
 
-            setTimeout(() => {
-                $("#penjelasan-covid").css({
-                    "animation": "kanankiri 1s",
-                    "margin-left": "0",
-                    "display": "block"
-                })
-            }, 2500);
+            }, 1000);
         }
 
         if (scroll >= 3500) {

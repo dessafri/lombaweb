@@ -17,20 +17,32 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #56CFE1;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #56CFE1;">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="../img/logo.jpg" width="221" height="60" alt="logo" loading="lazy">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" width="221" height="60" alt="logo" loading="lazy">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link text-white" href="#">Beranda <span class="sr-only">(current)</span></a>
-                    <a class="nav-link text-white" href="#">Covid-19</a>
-                    <a class="nav-link text-white" href="#">Pencegahan</a>
+            <div class="collapse navbar-collapse row" id="navbarNavAltMarkup">
+                <div class="navbar-nav col col-lg-8 offset-4">
+                    <a class="nav-link text-white" href="../index.html">Beranda <span
+                            class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white" href="covid.html">Covid-19</a>
+                    <a class="nav-link text-white scroll" href="#pencegahan">Pencegahan</a>
+                    <a class="nav-link text-white text-center scroll" href="#" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hotline</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+                        style="margin-left: 200px; border: none;">
+                        <a class="dropdown-item" href="#"><i class="fas fa-phone-alt"
+                                style="margin-right: 5px;"></i><span>031 8430313</span></a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-mobile"
+                                style="margin-right: 5px;"></i><span>081334367800</span></a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-ambulance"
+                                style="margin-right: 5px;"></i><span>031 8284505</span></a>
+                    </div>
                     <a class="nav-link text-white" href="#">Data</a>
                 </div>
             </div>
@@ -42,15 +54,16 @@
             <div class="container">
                 <div class="row">
                     <div class="image col col-6">
-                        <img src="../img/coronavirus.jpg" alt="coronavirus" width="159" height="159"><br>
-                        <img src="../img/coronavirus.jpg" alt="coronavirus" width="103" height="103"
-                            style="margin-left: 129px; margin-top: -50px;"><br>
-                        <img src="../img/coronavirus.jpg" alt="coronavirus" width="242" height="242"
-                            style="margin-top: -100px; margin-left: -30px;">
-                        <img src="../img/coronavirus.jpg" alt="coronavirus" width="492" height="492"
-                            style="margin-top: -400px; margin-left: 150px;">
-                        <img src="../img/coronavirus.jpg" alt="coronavirus" width="159" height="159"
-                            style="margin-top: -150px; margin-left: 150px;">
+                        <img src="../img/coronavirus.png" alt="coronavirus" width="159" height="159"
+                            class="imgVirus"><br>
+                        <img src="../img/coronavirus.png" alt="coronavirus" width="103" height="103"
+                            style="margin-left: 129px; margin-top: -50px;" class="imgVirus"><br>
+                        <img src="../img/coronavirus.png" alt="coronavirus" width="242" height="242"
+                            style="margin-top: -100px; margin-left: -30px;" class="imgVirus">
+                        <img src="../img/coronavirus.png" alt="coronavirus" width="492" height="492"
+                            style="margin-top: -400px; margin-left: 150px;" class="imgVirus">
+                        <img src="../img/coronavirus.png" alt="coronavirus" width="159" height="159"
+                            style="margin-top: -150px; margin-left: 150px;" class="imgVirus">
                     </div>
                     <div class="title col col-6 d-flex justify-content-end">
                         <h1 class="text-black-50">APA ITU <br>
@@ -82,8 +95,8 @@
         </div>
         <div class="gejala-covid">
             <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <img src="../img/gejala.jpg" alt="gejala" width="275" height="331">
+                <div class="row d-flex justify-content-center" style="margin-top: 50px;">
+                    <img src="../img/gejala.png" alt="gejala" width="275" height="331" class="img-gejala">
                 </div>
                 <div class="row d-flex justify-content-center">
                     <h1 class="text-black-50">GEJALA UMUM<span> COVID-19</span></h1>
@@ -109,7 +122,8 @@
         <div class="penanganan-gejala">
             <div class="row">
                 <div class="col col-12 text-center">
-                    <img src="../img/orangmasker.jpg" alt="orang masker" width="130" height="195">
+                    <img src="../img/orangmasker.png" alt="orang masker" width="130" height="195" class="img-penanganan"
+                        id="img-penanganan">
                 </div>
             </div>
             <div class="container">
@@ -121,7 +135,7 @@
                 </div>
                 <div class="row">
                     <div class="col col-12">
-                        <p><i class="fas fa-check"></i>Hubungi nomor layanan COVID-19 di (024) 3580713 atau 082313600560
+                        <p><i class="fas fa-check"></i>Hubungi nomor layanan COVID-19 di (031) 8430313 atau 081334367800
                             untuk mendapatkan
                             penanganan <br>
 
@@ -157,27 +171,29 @@
                 </div>
                 <div class="row">
                     <div class="col col-1">
-                        <img src="../img/batuk.jpg" alt="gambar batuk" width="90" height="90">
+                        <img src="../img/batuk.png" alt="gambar batuk" width="90" height="90" class="img-penularan">
                     </div>
                     <div class="col col-11 d-flex">
-                        <span>Melalui percikan-percikan dari hidung atau mulut yang keluar saat orang yang terinfeksi
+                        <span class="span-penularan">Melalui percikan-percikan dari hidung atau mulut yang keluar saat
+                            orang yang terinfeksi
                             COVID-19</span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-1">
-                        <img src="../img/contact.jpg" alt="gambar batuk" width="90" height="90">
+                        <img src="../img/contact.png" alt="gambar batuk" width="90" height="90" class="img-penularan">
                     </div>
                     <div class="col col-11 d-flex">
-                        <span>Melalui kontak fisik dengan orang yang terinfeksi COVID-19</span>
+                        <span class="span-penularan">Melalui kontak fisik dengan orang yang terinfeksi COVID-19</span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-1">
-                        <img src="../img/reusable.jpg" alt="gambar batuk" width="90" height="90">
+                        <img src="../img/reusable.png" alt="gambar batuk" width="90" height="90" class="img-penularan">
                     </div>
                     <div class="col col-11 d-flex">
-                        <span>Melalui Barang yang digunakan bersama-sama dengan banyak orang</span>
+                        <span class="span-penularan">Melalui Barang yang digunakan bersama-sama dengan banyak
+                            orang</span>
                     </div>
                 </div>
                 <div class="row">
@@ -189,7 +205,7 @@
                 </div>
             </div>
         </div>
-        <div class="protokol-kesehatan" style="overflow: hidden;">
+        <div class="protokol-kesehatan" style="overflow: hidden;" id="pencegahan">
             <div class="container">
                 <div class="row">
                     <div class="col col-6 text-center offset-3" style="margin-top: 48px;">
@@ -201,34 +217,38 @@
                     <div class="col col-9">
                         <div class="row">
                             <div class="col col-1">
-                                <img src="../img/cucitangan.jpg" alt="cuci tangan" width="90" height="93">
+                                <img src="../img/cucitangan.png" alt="cuci tangan" width="90" height="93"
+                                    class="imgHimbauanProtokol">
                             </div>
                             <div class="col col-10 d-flex" style="margin-left: 16px; margin: auto;">
-                                <span class="protokol">CUCI TANGAN DENGAN AIR MENGALIR</span>
+                                <span class="protokolspan">CUCI TANGAN DENGAN AIR MENGALIR</span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col col-1 offset-1">
-                                <img src="../img/jarak.jpg" alt="Jaga jarak" width="90" height="93">
+                                <img src="../img/jarak.png" alt="Jaga jarak" width="90" height="93"
+                                    class="imgHimbauanProtokol">
                             </div>
                             <div class="col col-9 d-flex offset-2" style="margin-left: 16px; margin: auto;">
-                                <span class="protokol">JAGA JARAK AMAN KETIKA BERBICARA</span>
+                                <span class="protokolspan">JAGA JARAK AMAN KETIKA BERBICARA</span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col col-1 offset-2">
-                                <img src="../img/bergerombol.jpg" alt="bergerombol" width="90" height="93">
+                                <img src="../img/bergerombol.png" alt="bergerombol" width="90" height="93"
+                                    class="imgHimbauanProtokol">
                             </div>
                             <div class="col col-8 d-flex offset-3" style="margin-left: 16px; margin: auto;">
-                                <span class="protokol">HINDARI BERGEROMBOL</span>
+                                <span class="protokolspan">HINDARI BERGEROMBOL</span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col col-1 offset-3">
-                                <img src="../img/jabattangan.jpg" alt="jabat tangan" width="90" height="93">
+                                <img src="../img/jabattangan.png" alt="jabat tangan" width="90" height="93"
+                                    class="imgHimbauanProtokol">
                             </div>
                             <div class="col col-7 d-flex offset-4" style="margin-left: 16px; margin: auto;">
-                                <span class="protokol">HINDARI BERJABAT TANGAN</span>
+                                <span class="protokolspan">HINDARI BERJABAT TANGAN</span>
                             </div>
                         </div>
                         <div class="row">
@@ -238,7 +258,7 @@
                         </div>
                     </div>
                     <div class="col col-3">
-                        <img src="../img/orangmasker.jpg" alt="orang masker" width="322" height="485"
+                        <img src="../img/orangmasker.png" alt="orang masker" width="322" height="485"
                             style="margin-top: 153px;">
                     </div>
                 </div>
@@ -248,7 +268,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-5">
-                        <img src="../img/perang.jpg" alt="poster safe" width="400" height="400">
+                        <img src="../img/perang.png" alt="poster safe" width="400" height="400">
                     </div>
                     <div class="col col-7 d-flex">
                         <p style="margin: auto;">MARI BERSAMA SAMA
@@ -264,7 +284,7 @@
                     <div class="col col-10 d-flex" style="height: 210px;">
                         <div class="row">
                             <div class="col col-12">
-                                <img src="../img/logo.jpg" alt="logo inn" width="250" height="70">
+                                <img src="../img/logo.png" alt="logo inn" width="250" height="70">
                             </div>
                             <div class="col col-12">
                                 <h3>INFORMATIONS NEW NORMAL</h3>
@@ -280,16 +300,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col col-12 text-center">
-                        <span>&#169; Copyright Informations New Normal</span>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col col-12 text-center"
+                    style="background-color: #4bbcce; padding-bottom: 7px; box-sizing: border-box;">
+                    <span style="margin-top: 1px;">&#169; Copyright Informations New Normal</span>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
@@ -299,7 +320,8 @@
     </script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg="nest"></script>
-
+    <script src="https://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

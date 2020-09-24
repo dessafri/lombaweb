@@ -17,7 +17,7 @@ nav {
 
 #navbarNavAltMarkup {
   margin-left: 226px;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: normal;
 }
 
@@ -31,6 +31,20 @@ nav {
 
 .jumbohome .image {
   padding-top: 155px;
+}
+
+.jumbohome .imgVirus {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+
+.jumbohome .imgVirusMuncul {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
 .jumbohome .title h1 {
@@ -101,6 +115,14 @@ nav {
   margin-bottom: 80px;
 }
 
+.gejala-covid .img-gejala {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
 .gejala-covid h1 {
   font-family: Rubik;
   font-weight: 500;
@@ -155,6 +177,14 @@ nav {
   color: #7f8485;
 }
 
+.penanganan-gejala .img-penanganan {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
 .penanganan-gejala h1 span {
   color: #7096BD;
 }
@@ -170,6 +200,14 @@ nav {
 
 .penanganan-gejala i {
   margin-right: 5px;
+}
+
+.penanganan-gejala .fa-check {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  opacity: 0;
+  -webkit-transition: .9;
+  transition: .9;
 }
 
 .penanganan-gejala .btn-penularan {
@@ -208,6 +246,18 @@ nav {
   margin-bottom: 50px;
 }
 
+.penularan .img-penularan {
+  margin-left: -100px;
+  opacity: 0;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
+.penularan .img-penularanMuncul {
+  margin-left: 0;
+  opacity: 1;
+}
+
 .penularan span {
   margin-top: auto;
   margin-bottom: auto;
@@ -216,6 +266,21 @@ nav {
   font-size: 18px;
   text-align: center;
   color: #7f8485;
+  display: inline-block;
+}
+
+.penularan .span-penularan {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  opacity: 0;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
+.penularan .span-penularanMuncul {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
 .penularan .btn-protokol {
@@ -252,17 +317,42 @@ nav {
   color: #7f8485;
 }
 
+.protokol-kesehatan .imgHimbauanProtokol {
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+
+.protokol-kesehatan .img-muncul {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
 .protokol-kesehatan h1 span {
   font-weight: bold;
   font-size: 48px;
 }
 
-.protokol-kesehatan span.protokol {
+.protokol-kesehatan .protokolspan {
   font-family: Rubik;
   font-weight: bold;
   font-size: 22px;
   text-align: center;
   color: #fff;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.protokol-kesehatan .spanmuncul {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  opacity: 1;
 }
 
 .protokol-kesehatan span.masker {
@@ -316,7 +406,7 @@ footer .footer h3 {
 footer .footer ul {
   font-family: Rubik;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   text-align: left;
   list-style: none;
   margin-top: auto;
@@ -332,30 +422,8 @@ footer .footer span {
   display: inline-block;
   font-family: "Open Sans";
   font-weight: normal;
-  font-size: 22px;
+  font-size: 18px;
   text-align: left;
   color: #fff;
-}
-
-@media (min-width: 576px) {
-  .jumbohome {
-    width: 100%;
-    height: 695px;
-    display: none;
-  }
-  .jumbohome .image {
-    padding-top: 155px;
-    margin-left: 40px !important;
-  }
-  .jumbohome .title h1 {
-    font-family: Rubik;
-    font-weight: 500;
-    font-size: 20px;
-    text-align: left;
-    margin: auto;
-  }
-  .jumbohome span {
-    color: #56CFE1;
-  }
 }
 /*# sourceMappingURL=style.css.map */
