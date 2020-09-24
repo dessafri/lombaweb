@@ -28,9 +28,20 @@ nav {
 
 #navbarNavAltMarkup {
     margin-left: 226px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: normal;
 
+}
+
+.btn-pulse {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: 50px;
+    bottom: 50px;
+    z-index: 9999999;
+    opacity: 0;
 }
 
 .jumbohome {
@@ -467,7 +478,6 @@ nav {
 footer {
     .footer {
         width: 100%;
-        height: 246px;
         background: #56cfe1;
 
         img {

@@ -8,8 +8,17 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         var scroll = $(this).scrollTop();
-        console.log(scroll)
-        if (scroll >= 1185) {
+        if (scroll > 350) {
+            $('.btn-pulse').css({
+                "opacity": "1"
+            })
+        }
+        if (scroll < 350) {
+            $('.btn-pulse').css({
+                "opacity": "0"
+            })
+        }
+        if (scroll >= 1085) {
             setTimeout(() => {
                 $('.img-gejala').css({
                     "transform": "translateY(0)",
@@ -23,7 +32,7 @@ $(document).ready(function () {
                 }, 1500);
             }, 1000);
         }
-        if (scroll >= 2250) {
+        if (scroll >= 2150) {
             setTimeout(() => {
                 $('#img-penanganan').css({
                     "transform": "translateY(0)",
@@ -32,7 +41,7 @@ $(document).ready(function () {
             }, 1000);
         }
 
-        if (scroll >= 3225) {
+        if (scroll >= 3125) {
             $('.img-penularan').each(function (i) {
                 setTimeout(() => {
                     $('.img-penularan').eq(i).addClass('img-penularanMuncul')
@@ -44,7 +53,7 @@ $(document).ready(function () {
                 }, 500 * (i + 1));
             })
         }
-        if (scroll >= 3395) {
+        if (scroll >= 3295) {
             $(".imgHimbauanProtokol").each(function (i) {
                 setTimeout(() => {
                     $(".imgHimbauanProtokol").eq(i).addClass("img-muncul")

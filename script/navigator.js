@@ -29,8 +29,11 @@ function convertLatLong(lat, long) {
             return res.json();
         })
         .then(resJson => {
-            let kota = resJson.address.state_district
-            console.log(kota)
+            let cek = resJson.address.state_district
+            let kota = ""
+            if (cek == undefined) {
+                kota = resJson.address.city
+            }
             const hasil = dataCovidKota.filter(data => new RegExp(kota).test(data.properties.KAB_KOTA))
 
             let result = ""

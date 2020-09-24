@@ -42,6 +42,16 @@ $(document).ready(function () {
     });
     $(window).scroll(function (event) {
         var scroll = $(this).scrollTop();
+        if (scroll > 350) {
+            $('.btn-pulse').css({
+                "opacity": "1"
+            })
+        }
+        if (scroll < 350) {
+            $('.btn-pulse').css({
+                "opacity": "0"
+            })
+        }
         if (scroll >= 1390 && scroll < 1900) {
             setTimeout(() => {
                 $(".img-corona").addClass('img-coronaMuncul')

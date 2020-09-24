@@ -6,6 +6,7 @@ const getApi = () => {
         .then(function result(data) {
             let rs = data.features
             dataCovidPerkota(rs)
+            datacovid = rs
         })
     fetch(`https://indonesia-covid-19.mathdro.id/api/provinsi`)
         .then(function (data) {
@@ -14,13 +15,17 @@ const getApi = () => {
         .then(function (data) {
             dataCovidProvinsi(data.data)
         })
+
 }
 getApi()
 
 let dataCovidKota = []
+let datacovid = []
 
 function dataCovidPerkota(data) {
     dataCovidKota = data
+    datacovid = data
+
 }
 
 function dataCovidProvinsi(data) {
