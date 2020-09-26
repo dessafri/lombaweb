@@ -374,7 +374,7 @@ nav .dropdown-menu span {
   color: #7f8485;
 }
 
-.data-covid .btn-data:hover span {
+.data-covid .btn-data:hover a {
   color: white;
 }
 

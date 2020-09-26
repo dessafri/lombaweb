@@ -91,11 +91,7 @@ nav {
   color: #7f8485;
 }
 
-.jumbohome .btn-data:hover span {
-  color: white;
-}
-
-.jumbohome a:hover {
+.jumbohome .btn-data:hover a {
   color: white;
 }
 
