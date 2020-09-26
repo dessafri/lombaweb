@@ -99,6 +99,11 @@ nav {
   color: white;
 }
 
+#map {
+  width: 70vw;
+  height: 500px;
+}
+
 .poster {
   width: 100%;
   margin-bottom: 50px;

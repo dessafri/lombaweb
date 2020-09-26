@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
     <title>Data Covid-19</title>
 </head>
 
@@ -91,7 +92,12 @@
                     </tbody>
                 </table>
             </div>
-        </div>>
+        </div>
+        <div class="mapcovid d-flex justify-content-center" style="margin-top: 100px; flex-wrap: wrap;">
+            <h1 style="display: inline-block; margin-bottom: 50px;">PETA PERSEBARAN COVID-19 DI JAWA TIMUR
+            </h1>
+            <div id="map"></div>
+        </div>
         <div class="poster">
             <div class="container">
                 <div class="row">
@@ -104,6 +110,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </main>
     <footer>
         <div class="footer">
@@ -153,6 +160,8 @@
     <script src="script.js"></script>
     <script src="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+
 </body>
 
 </html>
