@@ -58,7 +58,7 @@ function convertLatLong(lat, long) {
                             </div>
                         </div>
                 `
-                saveData(data)
+                saveData(data.properties)
             })
 
             let spinner = `

@@ -8,6 +8,7 @@ let dbPromised = idb.open("INN", 1, function (upgradeDb) {
 });
 
 function saveData(data) {
+    console.log(data)
     dbPromised.then(function (db) {
         let tx = db.transaction("dataCovid", "readwrite");
         let store = tx.objectStore("dataCovid")

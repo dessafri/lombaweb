@@ -642,28 +642,29 @@ getDataCovid().then(data => {
         $('#datacovidkota').html(kosong)
     } else {
         data.forEach(data => {
+            console.log(data)
             datacovid = `
             <div class="datacovid" style="padding-top: 50px; box-sizing: border-box; color: #7f8485;">
-            <h3 class="text-center">${data.properties.KAB_KOTA}</h3>
+            <h3 class="text-center">${data.KAB_KOTA}</h3>
             <div class="info" style="margin-top: 50px;">
                 <div class="row">
                     <div class="col col-10 offset-1">
-                        <h5 class="text-left">Total Konfirmasi : <span>${data.properties.POSITIF}</span></h5>
+                        <h5 class="text-left">Total Konfirmasi : <span>${data.POSITIF}</span></h5>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-10 offset-1">
-                        <h5 class="text-left">Sembuh : <span>${data.properties.SEMBUH}</span></h5>
+                        <h5 class="text-left">Sembuh : <span>${data.SEMBUH}</span></h5>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-10 offset-1">
-                        <h5 class="text-left">Meninggal : <span>${data.properties.MENINGGAL}</span></h5>
+                        <h5 class="text-left">Meninggal : <span>${data.MENINGGAL}</span></h5>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-10 offset-1">
-                        <h5 class="text-left"><span>${data.properties.Resiko}</span></h5>
+                        <h5 class="text-left"><span>${data.Resiko}</span></h5>
                     </div>
                 </div>
                 <div class="row himbau" style="margin-top: 30px; color: black">
