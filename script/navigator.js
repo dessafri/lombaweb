@@ -38,7 +38,6 @@ function convertLatLong(lat, long) {
 
             let result = ""
             hasil.map(data => {
-
                 result = `
                 <h3 class="text-center">${data.properties.KAB_KOTA}</h3>
                         <div class="info">
@@ -59,6 +58,7 @@ function convertLatLong(lat, long) {
                             </div>
                         </div>
                 `
+                saveData(data)
             })
 
             let spinner = `
@@ -70,6 +70,8 @@ function convertLatLong(lat, long) {
             </div>
             `
 
+
+
             document.querySelector('.info-kota').innerHTML = spinner
 
             setTimeout(() => {
@@ -77,6 +79,8 @@ function convertLatLong(lat, long) {
                 document.querySelector('.info-kota').innerHTML = result;
                 document.querySelector('.himbau').style.display = "block";
             }, 5000);
+
+
 
         })
 }

@@ -94,9 +94,17 @@
             </div>
         </div>
         <div class="mapcovid d-flex justify-content-center" style="margin-top: 100px; flex-wrap: wrap;">
-            <h1 style="display: inline-block; margin-bottom: 50px;">PETA PERSEBARAN COVID-19 DI JAWA TIMUR
+            <h1 style="display: inline-block; margin-bottom: 50px;" class="text-black-50">PETA PERSEBARAN COVID-19 DI
+                JAWA TIMUR
             </h1>
-            <div id="map"></div>
+            <div id="map" style="margin-bottom: 50px;"></div>
+            <span style="display: inline-block; font-size: 12px;">Data Covid Di Ambil dari :
+                https://opendata.arcgis.com/datasets/59259cbc7e774e0db2ab1bcb072b5e0c_0.geojson </span>
+        </div>
+        <div class="datacovidkota" style="margin-top: 70px;">
+            <h1 class="text-center text-black-50">DATA COVID DI DAERAH ANDA</h1>
+            <div id="datacovidkota" style="margin-top: 30px;">
+            </div>
         </div>
         <div class="poster">
             <div class="container">
@@ -152,14 +160,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+    <script src="../script/api.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg="nest"></script>
     <script src="https://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
-    <script src="../script/api.js"></script>
-    <script src="script.js"></script>
     <script src="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <script src="../libraries/idb/lib/idb.js"></script>
+    <script src="../script/db.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

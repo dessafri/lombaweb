@@ -76,4 +76,6 @@ $(document).ready(function () {
     $("#reloadpage").click(function () {
         $(window).reload()
     })
+
+
 })

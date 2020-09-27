@@ -78,6 +78,17 @@ $(document).ready(function () {
 
         e.preventDefault();
     })
+    $('.ascroll').on('click', function (e) {
+        var tujuan = $(this).attr('href');
+
+        var elemenTujuan = $(tujuan);
+
+        $('html, body').animate({
+            scrollTop: elemenTujuan.offset().top - 50
+        }, 1500, 'easeInOutExpo');
+
+        e.preventDefault();
+    })
 
 
 

@@ -617,3 +617,67 @@ $('.scroll').on('click', function (e) {
 
     e.preventDefault();
 })
+
+getDataCovid().then(data => {
+    let kosong = `
+            <div class="datacovid">
+                <div class="row">
+                        <div class="col col-11 offset-1">
+                            <h2 style="margin-top: 130px;"><i class="fas fa-exclamation-circle"></i> Anda Belum
+                                Mengaktifkan Lokasi Tempat
+                                Tinggal
+                                Anda</h2>
+                            <span>Silahkan Aktifkan Lokasi Anda Di Halaman Home !</span>
+                        </div>
+                        <div class="col col-12 text-center">
+                            <button class="btn btn-outline-primary"><a href="../index.html">Aktifkan
+                                    Sekarang</a></button>
+                        </div>
+                        </div>
+                    </div>
+    `
+
+    let datacovid = ""
+    if (data.length == 0) {
+        $('#datacovidkota').html(kosong)
+    } else {
+        data.forEach(data => {
+            datacovid = `
+            <div class="datacovid" style="padding-top: 50px; box-sizing: border-box; color: #7f8485;">
+            <h3 class="text-center">${data.properties.KAB_KOTA}</h3>
+            <div class="info" style="margin-top: 50px;">
+                <div class="row">
+                    <div class="col col-10 offset-1">
+                        <h5 class="text-left">Total Konfirmasi : <span>${data.properties.POSITIF}</span></h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-10 offset-1">
+                        <h5 class="text-left">Sembuh : <span>${data.properties.SEMBUH}</span></h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-10 offset-1">
+                        <h5 class="text-left">Meninggal : <span>${data.properties.MENINGGAL}</span></h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-10 offset-1">
+                        <h5 class="text-left"><span>${data.properties.Resiko}</span></h5>
+                    </div>
+                </div>
+                <div class="row himbau" style="margin-top: 30px; color: black">
+                        <div class="col col-8 offset-2">
+                            <p>Tetap waspada jaga kesehatan, jaga kebersihan, dan jaga jarak.
+                                Jauhi kerumunan jika tidak ada keperluan mendesak
+                                <b>#bersamamelawancorona</b></p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        `
+        })
+
+        $('#datacovidkota').html(datacovid)
+    }
+})
